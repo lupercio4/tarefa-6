@@ -12,8 +12,8 @@
         <h1>Abrigo Bigode</h1>
         <p>Nos importamos com o verdadeiro melhor amigo do homem!</p>
         <nav>
-            <li><a href="#sobreNos">Nós</a> </li>
-            <li><a href="#">Adote aqui</a></li>
+            <li><a href="#sobreNos">Nós</a></li>
+            <li><a href="#adocaoProcesso">Adote aqui</a></li>
             <li><a href="#nossosAnimais">Nossos gatinhos</a></li>
             <li><a href="#contatoRapido">Contato</a></li>
             <li><a href="#equipe">Equipe</a></li>
@@ -29,7 +29,7 @@
         </div>
     </section>
     <main>
-        <section class="sobreNos">
+        <section id="sobreNos" class="sobreNos">
             <h3>Nossa missão</h3>
             <p>Nascemos com o intuito de ajudar cada felino em necessidade, pois temos compaixão por todos os animais e o que eles representam na vida de cada tutor. Não são apenas companheiros, mas também seres vivos que merecem ter uma boa vida, e é isso que buscamos com nossa iniciativa.</p>
             <p>Nosso abrigo é um espaço seguro e acolhedor, onde gatos resgatados recebem cuidados veterinários, alimentação adequada e muito amor enquanto aguardam por um novo lar. Trabalhamos incansavelmente para garantir que cada gato tenha a chance de encontrar uma família que o ame e cuide dele para sempre.</p>
@@ -42,8 +42,15 @@
                 <li>Gatos de todas as idades, tamanhos e personalidades estão disponíveis para adoção.</li>
                 <li>Todos vêm vacinados e prontos para o seu carinho!</li>
             </ul>
+            <h3>Nosso espaço</h3>
+            <p>Nosso abrigo é um espaço acolhedor e seguro, projetado para atender às necessidades dos gatos que resgatamos. Contamos com áreas de convivência amplas, onde os gatos podem socializar e brincar, além de espaços tranquilos para aqueles que preferem um ambiente mais calmo.</p>
+            <p>Construímos ele exclusivamente para o bem-estar de nossos animais e colaboradores. Para ajudar, verifique a parte de doações e/ou voluntariado.</p>
+            <div class="fotosAbrigo">
+                <img src="img/abrigointerno.jpeg" alt="Foto do abrigo interno" width="400" height="400">
+                <img src="img/abrigofachada.jpeg" alt="Foto da fachada do abrigo" width="400" height="400">
+            </div>
         </section>
-        <section class="adocaoProcesso">
+        <section id="adocaoProcesso" class="adocaoProcesso">
             <h3>O processo de adoção</h3>
             <p>O processo funciona de forma presencial ou online, onde tutores podem selecionar o gato que desejam. Documentos de identidade e comprovante de endereço são necessários. Adotar um companheiro é uma decisão séria que deve ser considerada antes de inciar o processo de levá-los ao seu novo lar amoroso!</p>
             <div class="passosAdocao">
@@ -90,8 +97,9 @@
                     </ul>
                     <p>Essa taxa ajuda a cobrir parte dos custos veterinários e nos ajuda a continuar resgatando mais animais.</p>
                 </div>
+            </div>
         </section>
-        <section class="contatoRapido">
+        <section id="contatoRapido" class="contatoRapido">
             <h3>Contato</h3>
             <p>Para esclarecimento de dúvidas, entre em contato através dos meios abaixo:</p>
             <div class="meiosDeContato">
@@ -99,7 +107,7 @@
                 <p>Email: contato@abrigobigode.com</p>
                 <form class="formularioContato">
                     <label for="nome">Nome: </label>
-                    <input type ="text" id="nome" name="nome" required>
+                    <input type="text" id="nome" name="nome" required>
                     <label for="email">Email: </label>
                     <input type="email" id="email" name="email" required>
                     <label for="mensagem">Mensagem: </label>
@@ -108,108 +116,113 @@
                 </form>
             </div>
         </section>
-            <section class="nossosAnimais">
-                <h3>Nossos gatinhos:</h3>
-                <div class="galeriaDeGatos">
-                    <div class="gato">
-                        <img src="img/gato1.jpeg" alt="Gato 1" width="200" height="200">
-                        <p>Nome: Mel</p>
-                        <p>Idade: 2 anos</p>
-                        <p>Sexo: Fêmea</p>
-                        <p>Cor: Calico</p>
-                        <p>Personalidade: Brincalhona e carinhosa. Precisa de bastante atenção e estímulo frequente com brincadeiras e janelas. Ideal para tutores que procuram diversão e companheirismo.</p>
-                        <input type="button" value="Adotar Mel">
-                    </div>
-                    <div class="gato">
-                        <img src="img/gato2.jpeg" alt="Gato 2" width="200" height="200">
-                        <p>Nome: Luna</p>
-                        <p>Idade: 5 anos</p>
-                        <p>Sexo: Fêmea</P>
-                        <p>Cor: Cinza</p>
-                        <p>Personalidade: Calma e preguiçosa. Apesar de mais velha, o que contribui pra sua personalidade relaxada, Luna precisa de afeto constante e de acessórios para gatos como torres e brinquedos de auto-uso e uma cama própria caso o tutor não queira compartilhar a sua. Ideal para tutores ocupados que gostam de gatos comportados.</p>
-                        <input type="button" value="Adotar Luna">
-                    </div>
-                    <div class="gato">
-                        <img src="img/gato3.jpeg" alt="Gato 3" width="200" height="200">
-                        <p>Nome: Destruidor de galáxias</p>
-                        <p>Idade: 6 meses</p>
-                        <p>Sexo: Macho</p>
-                        <p>Cor: Preto</p>
-                        <p>Personalidade: Extremamente enérgetico. Por ser um filhote, Destruidor de galáxias precisa de tutores pacientes que estão dispostos a lidar com a fase mais difícil da vida de um gato, sua fase inicial. Tem tendências de escalar objetos e derrubá-los, além de ser territorial e um pouco agressivo com novas pessoas que não reconhece. Ideal para tutores pacientes e que gostem do caos (e que não sejam galáxias).</p>
-                        <input type="button" value="Adotar Destruidor">
-                    </div>
-                    <div class="gato">
-                        <img src="img/gato4.jpeg" alt="Gato 4" width="200" height="200">
-                        <p>Nome: Aveia</p>
-                        <p>Idade: 3 anos</p>
-                        <p>Sexo: Fêmea</p>
-                        <p>Cor: Areia</p>
-                        <p>Personalidade: Muito carinhosa e apegada. Aveia é uma gata que gosta de estar perto do tutor o tempo todo, seja no colo ou dormindo ao lado. Ideal para tutores que gostam de gatos carinhosos e apegados.</p>
-                        <input type="button" value="Adotar Aveia">
-                    </div>
-                    <div class="gato">
-                        <img src="img/gato5.jpeg" alt="Gato 5" width="200" height="200">
-                        <p>Nome: Simba</p>
-                        <p>Idade: 4 anos</p>
-                        <p>Sexo: Macho</p>
-                        <p>Cor: Laranja</p>
-                        <p>Personalidade: Aventureiro e curioso. Simba é um gato que gosta de explorar o ambiente e descobrir coisas novas. Ideal para tutores que gostam de gatos independentes e curiosos.</p>
-                        <input type="button" value="Adotar Simba">
-                    </div>
-                    <div class="gato">
-                        <img src="img/gato6.jpg" alt="Gato 6" width="200" height="200">
-                        <p>Nome: Nala</p>
-                        <p>Idade: 1 ano</p>
-                        <p>Sexo: Fêmea</p>
-                        <p>Cor: Tigrada</p>
-                        <p>Personalidade: Brincalhona e sociável. Nala é uma gata que gosta de estar perto de outros gatos e pessoas, e adora brincar com brinquedos e interagir com o tutor. Ideal para tutores que gostam de gatos sociáveis e brincalhões.</p>
-                        <input type="button" value="Adotar Nala">
+        <section id="nossosAnimais" class="nossosAnimais">
+            <h3>Nossos gatinhos:</h3>
+            <div class="galeriaDeGatos">
+                <div class="gato">
+                    <img src="img/gato1.jpeg" alt="Gato 1" width="200" height="200">
+                    <p>Nome: Mel</p>
+                    <p>Idade: 2 anos</p>
+                    <p>Sexo: Fêmea</p>
+                    <p>Cor: Calico</p>
+                    <p>Personalidade: Brincalhona e carinhosa. Precisa de bastante atenção e estímulo frequente com brincadeiras e janelas. Ideal para tutores que procuram diversão e companheirismo.</p>
+                    <input type="button" value="Adotar Mel">
+                </div>
+                <div class="gato">
+                    <img src="img/gato2.jpeg" alt="Gato 2" width="200" height="200">
+                    <p>Nome: Luna</p>
+                    <p>Idade: 5 anos</p>
+                    <p>Sexo: Fêmea</p>
+                    <p>Cor: Cinza</p>
+                    <p>Personalidade: Calma e preguiçosa. Apesar de mais velha, o que contribui pra sua personalidade relaxada, Luna precisa de afeto constante e de acessórios para gatos como torres e brinquedos de auto-uso e uma cama própria caso o tutor não queira compartilhar a sua. Ideal para tutores ocupados que gostam de gatos comportados.</p>
+                    <input type="button" value="Adotar Luna">
+                </div>
+                <div class="gato">
+                    <img src="img/gato3.jpeg" alt="Gato 3" width="200" height="200">
+                    <p>Nome: Destruidor de galáxias</p>
+                    <p>Idade: 6 meses</p>
+                    <p>Sexo: Macho</p>
+                    <p>Cor: Preto</p>
+                    <p>Personalidade: Extremamente enérgetico. Por ser um filhote, Destruidor de galáxias precisa de tutores pacientes que estão dispostos a lidar com a fase mais difícil da vida de um gato, sua fase inicial. Tem tendências de escalar objetos e derrubá-los, além de ser territorial e um pouco agressivo com novas pessoas que não reconhece. Ideal para tutores pacientes e que gostem do caos (e que não sejam galáxias).</p>
+                    <input type="button" value="Adotar Destruidor">
+                </div>
+                <div class="gato">
+                    <img src="img/gato4.jpeg" alt="Gato 4" width="200" height="200">
+                    <p>Nome: Aveia</p>
+                    <p>Idade: 3 anos</p>
+                    <p>Sexo: Fêmea</p>
+                    <p>Cor: Areia</p>
+                    <p>Personalidade: Muito carinhosa e apegada. Aveia é uma gata que gosta de estar perto do tutor o tempo todo, seja no colo ou dormindo ao lado. Ideal para tutores que gostam de gatos carinhosos e apegados.</p>
+                    <input type="button" value="Adotar Aveia">
+                </div>
+                <div class="gato">
+                    <img src="img/gato5.jpeg" alt="Gato 5" width="200" height="200">
+                    <p>Nome: Simba</p>
+                    <p>Idade: 4 anos</p>
+                    <p>Sexo: Macho</p>
+                    <p>Cor: Laranja</p>
+                    <p>Personalidade: Aventureiro e curioso. Simba é um gato que gosta de explorar o ambiente e descobrir coisas novas. Ideal para tutores que gostam de gatos independentes e curiosos.</p>
+                    <input type="button" value="Adotar Simba">
+                </div>
+                <div class="gato">
+                    <img src="img/gato6.jpg" alt="Gato 6" width="200" height="200">
+                    <p>Nome: Nala</p>
+                    <p>Idade: 1 ano</p>
+                    <p>Sexo: Fêmea</p>
+                    <p>Cor: Tigrada</p>
+                    <p>Personalidade: Brincalhona e sociável. Nala é uma gata que gosta de estar perto de outros gatos e pessoas, e adora brincar com brinquedos e interagir com o tutor. Ideal para tutores que gostam de gatos sociáveis e brincalhões.</p>
+                    <input type="button" value="Adotar Nala">
+                </div>
+            </div>
+        </section>
+        <section class="adocaoEspecial">
+            <h3>Programa de Adoção Especial para Gatos Idosos e com Necessidades Especiais</h3>
+            <p>Acreditamos que todos os gatos merecem uma chance, independentemente da idade ou condição de saúde. Por isso, temos um programa especial para gatos idosos e com necessidades especiais, com taxa de adoção reduzida e acompanhamento veterinário gratuito por 6 meses.</p>
+            <p>Se você está pensando em adotar, considere dar uma chance a esses gatos que normalmente têm mais dificuldade para encontrar um lar.</p>
+            <button>Conheça mais sobre esse programa</button>
+        </section>
+        <section id="equipe" class="equipe">
+            <h3>Sobre Nós</h3>
+            <p>Somos uma equipe de 4 amantes de animais desde crianças. Nossa iniciativa é 100% sem fins lucrativos, procurando apenas cuidar de nossos amigos peludos até acharem um lar permanente para viverem suas 9 vidas.</p>
+            <p>Conheça nossa equipe:</p>
+            <section class="membro1">
+                <img src="img/membro1.jpg" alt="Membro 1" width="200" height="200">
+                <p>Nome: Ana Silva</p>
+                <p>Função: Fundadora e Veterinária</p>
+                <p>Ana Silva é uma mulher simples do interior do Pará, que desde muito cedo desenvolveu um amor por todo e qualquer animal, especialmente os peludos. Formada em Medicina Veterinária pela UFPA, ela decidiu dedicar sua vida ao resgate e cuidado de gatos em situação de vulnerabilidade.</p>
+                <p>Além de coordenar o abrigo, Ana é responsável por todos os cuidados veterinários dos nossos gatos, desde vacinação até procedimentos mais complexos.</p>
+                <p>anasilva@abrigobigode.com</p>
             </section>
-            <section class="adocaoEspecial">
-                <h3>Programa de Adoção Especial para Gatos Idosos e com Necessidades Especiais</h3>
-                    <p>Acreditamos que todos os gatos merecem uma chance, independentemente da idade ou condição de saúde. Por isso, temos um programa especial para gatos idosos e com necessidades especiais, com taxa de adoção reduzida e acompanhamento veterinário gratuito por 6 meses.</p>
-                    <p>Se você está pensando em adotar, considere dar uma chance a esses gatos que normalmente têm mais dificuldade para encontrar um lar.</p>
-                    <button>Conheça mais sobre esse programa</button>
+            <section class="membro2">
+                <img src="img/membro2.jpg" alt="Membro 2" width="200" height="200">
+                <p>Nome: Lucas Souza</p>
+                <p>Função: Coordenador e cuidador</p>
+                <p>Apesar de preferir cachorros, Lucas não discrimina contra gatos! Coordena a equipe e cuida dos animais de perto. Formado em Zootecnia, Lucas é responsável pela gestão do dia a dia do abrigo, incluindo alimentação, limpeza e atividades de enriquecimento ambiental para os gatos.</p>
+                <p>Lucas também é o responsável pelo processo de adoção, realizando as entrevistas e visitas aos possíveis lares.</p>
+                <p>lucassouza@abrigobigode.com</p>
             </section>
-            <section class="equipe">
-                <h3>Sobre Nós</h3>
-                <p>Somos uma equipe de 4 amantes de animais desde crianças. Nossa iniciativa é 100% sem fins lucrativos, procurando apenas cuidar de nossos amigos peludos até acharem um lar permanente para viverem suas 9 vidas.</p>
-                <p>Conheça nossa equipe:</p>
-                    <section class="equipe">
-                        <section class="membro1">
-                            <img src="img/membro1.jpg" alt="Membro 1" width="200" height="200">
-                            <p>Nome: Ana Silva</p>
-                            <p>Função: Fundadora e Veterinária</p>
-                            <p>Ana Silva é uma mulher simples do interior do Pará, que desde muito cedo desenvolveu um amor por todo e qualquer animal, especialmente os peludos. Formada em Medicina Veterinária pela UFPA, ela decidiu dedicar sua vida ao resgate e cuidado de gatos em situação de vulnerabilidade.</p>
-                            <p>Além de coordenar o abrigo, Ana é responsável por todos os cuidados veterinários dos nossos gatos, desde vacinação até procedimentos mais complexos.</p>
-                        <section class="membro2">
-                            <img src="img/membro2.jpg" alt="Membro 2" width="200" height="200">
-                            <p>Nome: Lucas Souza</p>
-                            <p>Função: Coordenador e cuidador</p>
-                            <p>Apesar de preferir cachorros, Lucas não discrimina contra gatos! Coordena a equipe e cuida dos animais de perto. Formado em Zootecnia, Lucas é responsável pela gestão do dia a dia do abrigo, incluindo alimentação, limpeza e atividades de enriquecimento ambiental para os gatos.</p>
-                            <p>Lucas também é o responsável pelo processo de adoção, realizando as entrevistas e visitas aos possíveis lares.</p>
-                        </section>
-                        <section class="membro3">
-                            <img src="img/membro3.jpg" alt="Membro 3" width="200" height="200">
-                            <p>Nome: Maria Oliveira</p>
-                            <p>Função: Marketing e Social Media</p>
-                            <p>Maria é a responsável por manter nossas redes sociais atualizadas e divulgar nossos gatinhos para adoção. Formada em Publicidade e Propaganda, ela cria campanhas criativas para aumentar a visibilidade do abrigo e conseguir mais adoções.</p>
-                            <p>Além disso, Maria organiza eventos de adoção e parcerias com empresas locais para arrecadar fundos e suprimentos para o abrigo.</p>
-                        </section>
-                        <section class="membro4">
-                            <img src="img/membro4.jpg" alt="Membro 4" width="200" height="200">
-                            <p>Nome: Sara Munich</p>
-                            <p>Função: Cuidadora e fotógrafa</p>
-                            <p>Sara é a fotógrafa oficial do abrigo, capturando os melhores momentos dos nossos gatinhos para dificultar a sua escolha! Formada em Fotografia, ela usa suas habilidades para mostrar a personalidade única de cada gato, aumentando suas chances de adoção.</p>
-                            <p>Além das fotos, Sara também é responsável pelo cuidado diário dos gatos, especialmente dos mais tímidos ou com necessidades especiais.</p>
-                        </section>
-                        <section class="fotoVoluntarios">
-                            <img src="img/voluntarios.jpg" alt="voluntarios" width="400" height="200">
-                            <h4>Um obrigada especial a todos os nossos voluntários!</h4>
-                        </section>
+            <section class="membro3">
+                <img src="img/membro3.jpg" alt="Membro 3" width="200" height="200">
+                <p>Nome: Maria Oliveira</p>
+                <p>Função: Marketing e Social Media</p>
+                <p>Maria é a responsável por manter nossas redes sociais atualizadas e divulgar nossos gatinhos para adoção. Formada em Publicidade e Propaganda, ela cria campanhas criativas para aumentar a visibilidade do abrigo e conseguir mais adoções.</p>
+                <p>Além disso, Maria organiza eventos de adoção e parcerias com empresas locais para arrecadar fundos e suprimentos para o abrigo.</p>
+                <p>mariaoli@abrigobigode.com</p>
+            </section>
+            <section class="membro4">
+                <img src="img/membro4.jpg" alt="Membro 4" width="200" height="200">
+                <p>Nome: Sara Munich</p>
+                <p>Função: Cuidadora e fotógrafa</p>
+                <p>Sara é a fotógrafa oficial do abrigo, capturando os melhores momentos dos nossos gatinhos para dificultar a sua escolha! Formada em Fotografia, ela usa suas habilidades para mostrar a personalidade única de cada gato, aumentando suas chances de adoção.</p>
+                <p>Além das fotos, Sara também é responsável pelo cuidado diário dos gatos, especialmente dos mais tímidos ou com necessidades especiais.</p>
+                <p>saramunich@abrigobigode.com</p>
+            </section>
+            <section class="fotoVoluntarios">
+                <img src="img/voluntarios.jpeg" alt="voluntarios" width="400" height="200">
+                <h4>Um obrigada especial a todos os nossos voluntários!</h4>
             </section>
         </section>
-        <section class="doacoes">
+        <section id="doacoes" class="doacoes">
             <h3>Como ajudar</h3>
             <p>Nosso abrigo depende de doações para continuar seu trabalho. Você pode ajudar de várias formas:</p>
             <ul>
@@ -218,26 +231,26 @@
             </ul>
             <button>Faça uma doação</button>
         </section>
-        <section class="voluntariado">
+        <section id="voluntariado" class="voluntariado">
             <h3>Junte-se a nós como voluntário</h3>
             <p>Estamos sempre em busca de pessoas apaixonadas por animais para se juntar à nossa equipe de voluntários. Como voluntário, você pode ajudar com:</p>
             <div class="atividades-voluntariado">
-                    <h3>Atividades para voluntários</h3>
-                    <ul>
-                        <li><strong>Cuidado direto com os gatos:</strong> Alimentação, limpeza das áreas, escovação, administração de medicamentos (com supervisão).</li>
-                        <li><strong>Socialização:</strong> Passar tempo com gatos tímidos ou assustados para ajudá-los a ganhar confiança.</li>
-                        <li><strong>Eventos de adoção:</strong> Ajudar na organização e execução de eventos de adoção em pet shops e outros locais.</li>
-                        <li><strong>Transporte:</strong> Levar gatos para consultas veterinárias ou eventos de adoção.</li>
-                        <li><strong>Manutenção:</strong> Ajudar na manutenção e melhorias das instalações do abrigo.</li>
-                        <li><strong>Artesanato:</strong> Confecção de brinquedos, camas e outros itens para os gatos.</li>
-                        <li><strong>Fotografia:</strong> Tirar fotos dos gatos para divulgação nas redes sociais e site.</li>
-                    </ul>
+                <h3>Atividades para voluntários</h3>
+                <ul>
+                    <li><strong>Cuidado direto com os gatos:</strong> Alimentação, limpeza das áreas, escovação, administração de medicamentos (com supervisão).</li>
+                    <li><strong>Socialização:</strong> Passar tempo com gatos tímidos ou assustados para ajudá-los a ganhar confiança.</li>
+                    <li><strong>Eventos de adoção:</strong> Ajudar na organização e execução de eventos de adoção em pet shops e outros locais.</li>
+                    <li><strong>Transporte:</strong> Levar gatos para consultas veterinárias ou eventos de adoção.</li>
+                    <li><strong>Manutenção:</strong> Ajudar na manutenção e melhorias das instalações do abrigo.</li>
+                    <li><strong>Artesanato:</strong> Confecção de brinquedos, camas e outros itens para os gatos.</li>
+                    <li><strong>Fotografia:</strong> Tirar fotos dos gatos para divulgação nas redes sociais e site.</li>
+                </ul>
             </div>
             <h2>Inscreva-se como voluntário</h2>
             <div class="formularioVoluntariado">
                 <form>
                     <label for="nomeVoluntario">Nome: </label>
-                    <input type ="text" id="nomeVoluntario" name="nomeVoluntario" required>
+                    <input type="text" id="nomeVoluntario" name="nomeVoluntario" required>
                     <label for="emailVoluntario">Email: </label>
                     <input type="email" id="emailVoluntario" name="emailVoluntario" required>
                     <label for="telefoneVoluntario">Telefone: </label>
@@ -246,16 +259,89 @@
                     <input type="text" id="disponibilidade" name="disponibilidade" required>
                     <input type="submit" value="Enviar">
                 </form>
+            </div>
+        </section>
+        <section class="faq">
+            <h3>Perguntas Frequentes</h3>
+            <div class="faq-item">
+                <h4>Posso visitar o abrigo antes de decidir adotar?</h4>
+                <p>Sim! Agende uma visita pelo nosso formulário de contato ou telefone.</p>
+            </div>
+            <div class="faq-item">
+                <h4>Quais formas de pagamento são aceitas para doações?</h4>
+                <p>Pix, transferência bancária e dinheiro presencialmente.</p>
+            </div>
+            <div class="faq-item">
+                <h4>Posso ser voluntário apenas nos finais de semana?</h4>
+                <p>Sim, temos vagas para voluntários em horários flexíveis.</p>
+            </div>
+            <div class="faq-item">
+                <h4>Os gatos já vêm castrados?</h4>
+                <p>Sim, todos os gatos adultos são castrados antes da adoção.</p>
+            </div>
+        </section>
+        <section class="depoimentos">
+            <h3>Depoimentos de quem já adotou</h3>
+            <div class="depoimento">
+                <p>"Adotar a Papa foi a melhor decisão da minha vida. Ela trouxe alegria para nossa casa!"</p>
+                <span>- Fernanda, Sorocaba</span>
+            </div>
+            <div class="depoimento">
+                <p>"O abrigo foi super atencioso e me ajudou a escolher o gato ideal para minha família."</p>
+                <span>- Rafael, Votorantim</span>
+            </div>
+            <div class="depoimento">
+                <p>"Sou voluntária há 2 anos e recomendo a experiência para todos que amam animais."</p>
+                <span>- Juliana, Araçoiaba</span>
+            </div>
+        </section>
+        <section class="parceiros">
+            <h3>Parceiros</h3>
+            <ul>
+                <li>PetShop Amigo Animal</li>
+                <li>Clínica Veterinária Vida</li>
+                <li>Supermercado Bom Preço</li>
+                <li>ONG Felinos do Bem</li>
+            </ul>
+        </section>
+        <section class="newsletter">
+            <h3>Receba novidades do abrigo</h3>
+            <form>
+                <label for="emailNewsletter">Seu email:</label>
+                <input type="email" id="emailNewsletter" name="emailNewsletter" required>
+                <input type="submit" value="Inscrever-se">
+            </form>
+        </section>
+        <section class="galeriaEventos">
+            <h3>Galeria de Eventos</h3>
+            <div class="evento">
+                <img src="img/evento1.jpeg" alt="Evento de adoção" width="300" height="200">
+                <p>Evento de adoção - Maio 2024</p>
+            </div>
+            <div class="evento">
+                <img src="img/evento2.png" alt="Feira de voluntariado" width="300" height="200">
+                <p>Feira de voluntariado - Março 2023</p>
+            </div>
+        </section>
+        <section class="curiosidades">
+            <h3>Curiosidades sobre gatos</h3>
+            <ul>
+                <li>Gatos dormem em média 16 horas por dia.</li>
+                <li>O ronronar pode indicar felicidade ou pedir ajuda.</li>
+                <li>Gatos têm excelente audição e visão noturna.</li>
+                <li>Existem mais de 70 raças reconhecidas de gatos domésticos.</li>
+            </ul>
+        </section>
     </main>
-    <footer>
+    <footer class="footer">
         <div class="redesSociais">
-            <h5>Siga-nos nas redes sociais:</h3>
+            <h5>Siga-nos nas redes sociais:</h5>
             <p>Instagram: @abrigobigode</p>
             <p>Facebook: /abrigobigode</p>
             <p>Twitter: @abrigobigode</p>
         </div>
         <div class="contatoFooter">
-            <h5>Contato Rápido:</h3>
+            <h5>Contato Rápido:</h5>
             <p>Telefone: (15) 12345-6789</p>
             <p>Email: contato@abrigobigode.com</p>
         </div>
