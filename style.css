@@ -1,6 +1,21 @@
-body, p, h1, h2, h3, h4, h5, h6, li, label, input, button, textarea {
+body,
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+li,
+label,
+input,
+button,
+textarea {
     font-family: 'Montserrat', 'Segoe UI', 'Arial', 'Helvetica Neue', Helvetica, sans-serif;
 }
+
+
+/* fonte padrão para o corpo e elementos textuais */
 
 h3 {
     font-size: 1.8rem;
@@ -10,9 +25,15 @@ h3 {
     font-weight: bold;
 }
 
+
+/* estilo para títulos h3 */
+
 ul {
     list-style-type: none;
 }
+
+
+/* remove marcadores de lista */
 
 h4 {
     font-size: 1.4rem;
@@ -23,15 +44,23 @@ h4 {
 }
 
 
+/* estilo para títulos h4 */
+
 h2:not(.conteudoBanner) {
     color: white;
 }
 
+
+/* estilo para títulos h2, exceto os dentro de .conteudoBanner */
+
 img {
-    box-shadow: 0 4px 16px rgba(0,0,0,0.2);
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.2);
     border-radius: 8px;
     margin-bottom: 10px;
 }
+
+
+/* estilo padrão para imagens */
 
 li {
     font-size: 15px;
@@ -43,15 +72,21 @@ li {
     padding: 15px;
     margin: 10px 0;
     border-radius: 8px;
-    box-shadow: 0 2px 8px rgba(92,166,185,0.10);
+    box-shadow: 0 2px 8px rgba(92, 166, 185, 0.10);
     border: 1px solid #5ca6b9;
     text-align: center;
 }
+
+
+/* estilo para itens de lista */
 
 p {
     color: #666;
     line-height: 1.;
 }
+
+
+/* estilo padrão para parágrafos */
 
 form {
     display: flex;
@@ -60,9 +95,12 @@ form {
     background: #fff;
     padding: 25px;
     border-radius: 12px;
-    box-shadow: 0 8px 25px rgba(92,166,185,0.15);
-    border: 1px solid rgba(92,166,185,0.1);
+    box-shadow: 0 8px 25px rgba(92, 166, 185, 0.15);
+    border: 1px solid rgba(92, 166, 185, 0.1);
 }
+
+
+/* estilo para formulários */
 
 label {
     font-weight: 600;
@@ -71,6 +109,9 @@ label {
     display: block;
 }
 
+
+/* estilo para labels de formulários */
+
 .header {
     background: linear-gradient(135deg, #5ca6b9 0%, #4a94a5 100%);
     text-align: center;
@@ -78,15 +119,21 @@ label {
     padding: 2%;
     border-radius: 12px;
     border-bottom: 4px solid #81c5d6;
-    box-shadow: 0 4px 20px rgba(0,0,0,0.15);
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.15);
 }
+
+
+/* estilo para o cabeçalho */
 
 .headerTitulo {
     font-size: 36px;
     margin-bottom: 10px;
     color: #fff;
-    text-shadow: 1px 1px 3px rgba(0,0,0,0.2);
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.2);
 }
+
+
+/* estilo para o título no cabeçalho */
 
 .headerTexto {
     color: #e6faff;
@@ -95,12 +142,18 @@ label {
     font-weight: 500;
 }
 
+
+/* estilo para o texto no cabeçalho */
+
 .listaNav {
     display: flex;
     justify-content: center;
     gap: 25px;
     padding: 15px;
 }
+
+
+/* estilo para a lista de navegação */
 
 .listaNav a {
     color: #fff;
@@ -110,10 +163,16 @@ label {
     transition: all 0.3s ease;
 }
 
+
+/* estilo para links na navegação */
+
 .listaNav a:hover {
-    background: rgba(255,255,255,0.15);
+    background: rgba(255, 255, 255, 0.15);
     transform: translateY(-2px);
 }
+
+
+/* efeito hover para links na navegação */
 
 .imagemTopo {
     background: center / cover url(/img/backgroundbanner.jpg);
@@ -122,9 +181,11 @@ label {
     margin: 0 auto;
     display: flex;
     align-items: center;
-    
-    box-shadow: 0 4px 16px rgba(0,0,0,0.2);
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.2);
 }
+
+
+/* estilo para a imagem de topo */
 
 .banner {
     background-color: #81c5d6;
@@ -133,8 +194,11 @@ label {
     display: flex;
     align-items: center;
     justify-content: flex-end;
-    box-shadow: 0 4px 16px rgba(0,0,0,0.2);
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.2);
 }
+
+
+/* estilo para o banner */
 
 .conteudoBanner {
     width: 100%;
@@ -145,6 +209,9 @@ label {
     line-height: 30px;
 }
 
+
+/* estilo para o conteúdo dentro do banner */
+
 .botaoBanner {
     background-color: #f4f4f4;
     color: #5ca6b9;
@@ -153,9 +220,12 @@ label {
     font-size: 16px;
     border-radius: 5px;
     cursor: pointer;
-    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
     transition: background-color 0.3s ease, color 0.3s ease;
 }
+
+
+/* estilo para o botão dentro do banner */
 
 .adocaoProcesso {
     width: 90%;
@@ -163,16 +233,21 @@ label {
     padding: 40px;
     background: #e6faff;
     border-radius: 16px;
-    box-shadow: 0 4px 20px rgba(92,166,185,0.15);
+    box-shadow: 0 4px 20px rgba(92, 166, 185, 0.15);
     border: 2px solid #5ca6b9;
 }
 
 
-.adocaoProcesso > p {
+/* estilo para a seção de processo de adoção */
+
+.adocaoProcesso>p {
     text-align: center;
     margin-bottom: 40px;
     font-size: 1.1rem;
 }
+
+
+/* estilo para o parágrafo introdutório na seção de adoção */
 
 .passosAdocao {
     display: grid;
@@ -182,33 +257,49 @@ label {
     align-items: center;
 }
 
+
+/* estilo para o container dos passos de adoção */
+
 .passo {
     background: white;
     padding: 25px;
     border-radius: 12px;
-    box-shadow: 0 4px 15px rgba(92,166,185,0.1);
+    box-shadow: 0 4px 15px rgba(92, 166, 185, 0.1);
     border-left: 4px solid #5ca6b9;
     transition: transform 0.3s ease;
 }
+
+
+/* estilo para cada passo de adoção */
 
 .passo:hover {
     transform: translateY(-5px);
 }
 
 
-.requisitosAdocao, .taxaAdocao {
+/* efeito hover para cada passo de adoção */
+
+.requisitosAdocao,
+.taxaAdocao {
     background: white;
     padding: 30px;
     margin: 30px 0;
     border-radius: 12px;
-    box-shadow: 0 4px 15px rgba(92,166,185,0.1);
+    box-shadow: 0 4px 15px rgba(92, 166, 185, 0.1);
     border: 2px solid #5ca6b9;
 }
+
+
+/* estilo para as seções de requisitos e taxa de adoção */
 
 .taxaAdocao p {
     margin-top: 15px;
     font-style: italic;
 }
+
+
+/* estilo para o parágrafo dentro da seção de taxa de adoção */
+
 .sobreNos {
     display: flex;
     flex-direction: row;
@@ -216,6 +307,9 @@ label {
     gap: 30px;
     justify-content: center;
 }
+
+
+/* estilo para a seção sobre nós */
 
 .cardNos {
     border: 2px solid #5ca6b9;
@@ -228,8 +322,10 @@ label {
     align-items: center;
     padding: 24px 20px;
     box-sizing: border-box;
-   
 }
+
+
+/* estilo para os cards dentro da seção sobre nós */
 
 .cardEspaco {
     border: 2px solid #5ca6b9;
@@ -244,6 +340,9 @@ label {
     box-sizing: border-box;
 }
 
+
+/* estilo para o card maior dentro da seção sobre nós */
+
 .titulosNos {
     color: #5ca6b9;
     text-align: center;
@@ -253,16 +352,26 @@ label {
     margin-bottom: 16px;
 }
 
-.cardNos p, .cardEspaco p {
+
+/* estilo para os títulos dentro dos cards */
+
+.cardNos p,
+.cardEspaco p {
     text-align: center;
     margin: 0 0 10px 0;
 }
+
+
+/* estilo para os parágrafos dentro dos cards */
 
 .cardEspaco img {
     margin: 0 10px;
     width: 45%;
     height: auto;
 }
+
+
+/* estilo para a imagem dentro do card maior */
 
 .cardEspaco .fotosAbrigo {
     display: flex;
@@ -271,10 +380,16 @@ label {
     gap: 20px;
 }
 
+
+/* estilo para o container das fotos dentro do card maior */
+
 .nossosAnimais {
     display: flex;
     flex-direction: column;
 }
+
+
+/* estilo para a seção de nossos animais */
 
 .galeriaDeGatos {
     display: flex;
@@ -285,6 +400,9 @@ label {
     width: 100%;
 }
 
+
+/* estilo para a galeria de gatos */
+
 .gato {
     border: 2px solid #5ca6b9;
     background-color: #e6faff;
@@ -294,15 +412,21 @@ label {
     align-items: center;
     padding: 20px 12px;
     box-sizing: border-box;
-    box-shadow: 0 4px 16px rgba(0,0,0,0.12);
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.12);
     border-radius: 10px;
     margin-bottom: 20px;
 }
+
+
+/* estilo para cada card de gato */
 
 .gato img {
     width: 90%;
     height: 160px;
 }
+
+
+/* estilo para a imagem dentro do card de gato */
 
 .gato p {
     text-align: center;
@@ -312,21 +436,28 @@ label {
 }
 
 
+/* estilo para os parágrafos dentro do card de gato */
+
 .adocaoEspecial {
     background: #e6faff;
     border-radius: 16px;
     padding: 30px;
     margin: 40px auto;
     width: 80%;
-    box-shadow: 0 2px 8px rgba(92,166,185,0.10);
+    box-shadow: 0 2px 8px rgba(92, 166, 185, 0.10);
     text-align: center;
     border: 1px solid #5ca6b9;
 }
 
 
+/* estilo para a seção de adoção especial */
+
 .adocaoEspecial p {
     margin-bottom: 15px;
 }
+
+
+/* estilo para o parágrafo dentro da seção de adoção especial */
 
 .equipe {
     display: flex;
@@ -335,12 +466,14 @@ label {
     padding: 32px 0;
     background: linear-gradient(135deg, #e6faff 60%, #c0f2ff 100%);
     border-radius: 18px;
-    box-shadow: 0 6px 24px rgba(92,166,185,0.10);
+    box-shadow: 0 6px 24px rgba(92, 166, 185, 0.10);
     width: 100%;
-    
 }
 
-.equipe > p {
+
+/* estilo para a seção de equipe */
+
+.equipe>p {
     font-size: 1.1rem;
     margin-bottom: 18px;
     text-align: center;
@@ -355,17 +488,23 @@ label {
     width: 100%;
 }
 
+
+/* estilo para o container dos membros da equipe */
+
 .equipe section[class^="membro"] {
     width: 240px;
     padding: 12px 12px;
     border: 2px solid #5ca6b9;
     border-radius: 10px;
     background: #fff;
-    box-shadow: 0 2px 8px rgba(92,166,185,0.10);
+    box-shadow: 0 2px 8px rgba(92, 166, 185, 0.10);
     display: flex;
     flex-direction: column;
     align-items: center;
 }
+
+
+/* estilo para cada membro da equipe */
 
 .equipe section[class^="membro"] img {
     width: 60px;
@@ -374,31 +513,49 @@ label {
     margin-bottom: 8px;
 }
 
+
+/* estilo para a imagem do membro da equipe */
+
 .equipe section[class^="membro"] p {
     text-align: center;
     margin: 4px 0;
     font-size: 14px;
 }
 
+
+/* estilo para os parágrafos dentro do membro da equipe */
+
 .equipe section[class^="membro"] p:first-of-type {
     font-weight: bold;
     color: #5ca6b9;
 }
+
+
+/* estilo para o nome do membro da equipe */
 
 .equipe section[class^="membro"] p:nth-of-type(2) {
     font-style: italic;
     color: #3b7e99;
 }
 
+
+/* estilo para o cargo do membro da equipe */
+
 .equipe section[class^="membro"] p:last-of-type {
     color: #3b7e99;
     font-weight: 500;
 }
 
+
+/* estilo para a descrição do membro da equipe */
+
 .fotoVoluntarios img {
     margin-top: 24px;
     border-radius: 16px;
 }
+
+
+/* estilo para a imagem de voluntários */
 
 .contatoRapido {
     display: flex;
@@ -411,8 +568,11 @@ label {
     padding: 32px 0;
     margin: 32px auto;
     width: 50%;
-    box-shadow: 0 2px 8px rgba(92,166,185,0.10);
+    box-shadow: 0 2px 8px rgba(92, 166, 185, 0.10);
 }
+
+
+/* estilo para a seção de contato rápido */
 
 .contatoTexto {
     flex: 1;
@@ -421,6 +581,9 @@ label {
     align-items: flex-start;
     padding: 0 24px;
 }
+
+
+/* estilo para o texto dentro da seção de contato rápido */
 
 .contatoTitulo {
     color: #5ca6b9;
@@ -431,6 +594,9 @@ label {
     font-weight: bold;
 }
 
+
+/* estilo para o título dentro da seção de contato rápido */
+
 .meiosDeContato {
     display: flex;
     flex-direction: column;
@@ -438,12 +604,18 @@ label {
     gap: 8px;
 }
 
+
+/* estilo para os meios de contato */
+
 .meiosDeContato p {
     font-size: 16px;
     color: #3b7e99;
     text-align: left;
     margin: 0 0 10px 0;
 }
+
+
+/* estilo para os parágrafos dentro dos meios de contato */
 
 .formularioContato {
     flex: 1;
@@ -455,8 +627,11 @@ label {
     max-width: 340px;
     background: #fff;
     border-radius: 10px;
-    box-shadow: 0 2px 8px rgba(92,166,185,0.10);
+    box-shadow: 0 2px 8px rgba(92, 166, 185, 0.10);
 }
+
+
+/* estilo para o formulário de contato */
 
 .formularioContato input,
 .formularioContato textarea {
@@ -472,18 +647,33 @@ label {
     display: block;
 }
 
+
+/* estilo para inputs e textarea dentro do formulário de contato */
+
 .formularioContato input:focus,
 .formularioContato textarea:focus {
     border-color: #3b7e99;
     outline: none;
 }
 
+
+/* efeito de foco para inputs e textarea */
+
 .formularioContato textarea {
     min-height: 80px;
     resize: vertical;
 }
 
-.formularioContato input[type="submit"] , .botaoBanner, .doacoes button , .formularioVoluntariado input[type="submit"], .newsletter input[type="submit"] , .gato input[type="button"] , .adocaoEspecial button {
+
+/* estilo específico para textarea */
+
+.formularioContato input[type="submit"],
+.botaoBanner,
+.doacoes button,
+.formularioVoluntariado input[type="submit"],
+.newsletter input[type="submit"],
+.gato input[type="button"],
+.adocaoEspecial button {
     background-color: #5ca6b9;
     color: #fff;
     width: 100%;
@@ -495,13 +685,25 @@ label {
     cursor: pointer;
     margin-top: 8px;
     text-align: center;
-    box-shadow: 0 2px 8px rgba(92,166,185,0.10);
+    box-shadow: 0 2px 8px rgba(92, 166, 185, 0.10);
     transition: background-color 0.2s;
 }
 
-.formularioContato input[type="submit"]:hover, .botaoBanner:hover, .doacoes button:hover, .formularioVoluntariado input[type="submit"]:hover, .newsletter input[type="submit"]:hover, .gato input[type="button"]:hover, .adocaoEspecial button:hover {
+
+/* estilo para botões e submits */
+
+.formularioContato input[type="submit"]:hover,
+.botaoBanner:hover,
+.doacoes button:hover,
+.formularioVoluntariado input[type="submit"]:hover,
+.newsletter input[type="submit"]:hover,
+.gato input[type="button"]:hover,
+.adocaoEspecial button:hover {
     background-color: #3b7e99;
 }
+
+
+/* efeito hover para botões e submits */
 
 .voluntariado {
     display: flex;
@@ -514,8 +716,11 @@ label {
     padding: 40px;
     margin: 32px auto;
     width: 80%;
-    box-shadow: 0 8px 25px rgba(92,166,185,0.15);
+    box-shadow: 0 8px 25px rgba(92, 166, 185, 0.15);
 }
+
+
+/* estilo para a seção de voluntariado */
 
 .voluntariadoTexto {
     flex: 1;
@@ -523,6 +728,9 @@ label {
     flex-direction: column;
     align-items: flex-start;
 }
+
+
+/* estilo para o texto dentro da seção de voluntariado */
 
 .voluntariadoTitulo {
     color: #5ca6b9;
@@ -533,16 +741,25 @@ label {
     width: 100%;
 }
 
-.voluntariadoTexto > p {
+
+/* estilo para o título dentro da seção de voluntariado */
+
+.voluntariadoTexto>p {
     margin-bottom: 20px;
     width: 100%;
     text-align: left;
 }
 
+
+/* estilo para o parágrafo dentro da seção de voluntariado */
+
 .atividades-voluntariado {
     margin-bottom: 25px;
     width: 100%;
 }
+
+
+/* estilo para a lista de atividades */
 
 .formularioVoluntariado {
     flex: 0 0 350px;
@@ -550,6 +767,8 @@ label {
     flex-direction: column;
 }
 
+
+/* estilo para o formulário de voluntariado */
 
 .formularioVoluntariado input {
     width: 100%;
@@ -562,11 +781,16 @@ label {
     transition: all 0.3s ease;
 }
 
+
+/* estilo para inputs dentro do formulário de voluntariado */
+
 .formularioVoluntariado input:focus {
     border-color: #3b7e99;
-    box-shadow: 0 0 0 3px rgba(92,166,185,0.2);
+    box-shadow: 0 0 0 3px rgba(92, 166, 185, 0.2);
 }
 
+
+/* efeito de foco para inputs */
 
 .doacoes {
     background: #e6faff;
@@ -574,11 +798,14 @@ label {
     padding: 32px 24px;
     margin: 32px auto;
     width: 50%;
-    box-shadow: 0 2px 8px rgba(92,166,185,0.10);
+    box-shadow: 0 2px 8px rgba(92, 166, 185, 0.10);
     display: flex;
     flex-direction: column;
     align-items: center;
 }
+
+
+/* estilo para a seção de doações */
 
 .doacoes p,
 .doacoes ul,
@@ -587,10 +814,10 @@ label {
     width: 100%;
     text-align: left;
     display: block;
-
 }
 
 
+/* estilo para parágrafos, listas e botões dentro da seção de doações */
 
 .doacoes button {
     background-color: #5ca6b9;
@@ -603,25 +830,32 @@ label {
     width: auto;
 }
 
+
+/* estilo para o botão dentro da seção de doações */
+
 .faq {
     background: #e6faff;
     border-radius: 16px;
     padding: 30px;
     margin: 40px auto;
     width: 80%;
-    box-shadow: 0 2px 8px rgba(92,166,185,0.10);
+    box-shadow: 0 2px 8px rgba(92, 166, 185, 0.10);
 }
 
+
+/* estilo para a seção de FAQ */
 
 .faq-item {
     background: white;
     padding: 20px;
     margin-bottom: 15px;
     border-radius: 10px;
-    box-shadow: 0 2px 8px rgba(92,166,185,0.10);
+    box-shadow: 0 2px 8px rgba(92, 166, 185, 0.10);
     border: 1px solid #5ca6b9;
 }
 
+
+/* estilo para cada item de FAQ */
 
 .depoimentos {
     background: #e6faff;
@@ -629,19 +863,25 @@ label {
     padding: 30px;
     margin: 40px auto;
     width: 80%;
-    box-shadow: 0 2px 8px rgba(92,166,185,0.10);
+    box-shadow: 0 2px 8px rgba(92, 166, 185, 0.10);
     text-align: center;
 }
+
+
+/* estilo para a seção de depoimentos */
 
 .depoimento {
     background: white;
     padding: 20px;
     margin: 15px 0;
     border-radius: 10px;
-    box-shadow: 0 2px 8px rgba(92,166,185,0.10);
+    box-shadow: 0 2px 8px rgba(92, 166, 185, 0.10);
     border: 1px solid #5ca6b9;
     font-style: italic;
 }
+
+
+/* estilo para cada depoimento */
 
 .depoimento span {
     display: block;
@@ -650,15 +890,21 @@ label {
     color: #5ca6b9;
 }
 
+
+/* estilo para o autor do depoimento */
+
 .parceiros {
     background: #e6faff;
     border-radius: 16px;
     padding: 30px;
     margin: 40px auto;
     width: 80%;
-    box-shadow: 0 2px 8px rgba(92,166,185,0.10);
+    box-shadow: 0 2px 8px rgba(92, 166, 185, 0.10);
     text-align: center;
 }
+
+
+/* estilo para a seção de parceiros */
 
 .newsletter {
     background: #e6faff;
@@ -666,11 +912,12 @@ label {
     padding: 30px;
     margin: 40px auto;
     width: 60%;
-    box-shadow: 0 2px 8px rgba(92,166,185,0.10);
+    box-shadow: 0 2px 8px rgba(92, 166, 185, 0.10);
     text-align: center;
 }
 
 
+/* estilo para a seção de newsletter */
 
 .newsletter form {
     display: flex;
@@ -679,6 +926,8 @@ label {
     align-items: center;
 }
 
+
+/* estilo para o formulário dentro da seção de newsletter */
 
 .newsletter input[type="email"] {
     padding: 10px;
@@ -689,24 +938,32 @@ label {
 }
 
 
+/* estilo para o campo de email */
+
 .galeriaEventos {
     background: #e6faff;
     border-radius: 16px;
     padding: 30px;
     margin: 40px auto;
     width: 80%;
-    box-shadow: 0 2px 8px rgba(92,166,185,0.10);
+    box-shadow: 0 2px 8px rgba(92, 166, 185, 0.10);
     text-align: center;
 }
+
+
+/* estilo para a seção de galeria de eventos */
 
 .evento {
     background: white;
     padding: 20px;
     margin: 20px 0;
     border-radius: 10px;
-    box-shadow: 0 2px 8px rgba(92,166,185,0.10);
+    box-shadow: 0 2px 8px rgba(92, 166, 185, 0.10);
     border: 1px solid #5ca6b9;
 }
+
+
+/* estilo para cada evento */
 
 .curiosidades {
     background: #e6faff;
@@ -714,9 +971,11 @@ label {
     padding: 30px;
     margin: 40px auto;
     width: 80%;
-    box-shadow: 0 2px 8px rgba(92,166,185,0.10);
+    box-shadow: 0 2px 8px rgba(92, 166, 185, 0.10);
 }
 
+
+/* estilo para a seção de curiosidades */
 
 .footer {
     background-color: #5ca6b9;
@@ -727,7 +986,10 @@ label {
 }
 
 
-.redesSociais, .contatoFooter {
+/* estilo para o rodapé */
+
+.redesSociais,
+.contatoFooter {
     margin-bottom: 15px;
     display: inline-block;
     width: 45%;
@@ -735,14 +997,23 @@ label {
     text-align: center;
 }
 
+
+/* estilo para as seções dentro do rodapé */
+
 .footer p {
     margin: 4px 0;
     color: white;
     font-size: 0.85rem;
 }
 
-.footer > p:last-of-type {
+
+/* estilo para os parágrafos dentro do rodapé */
+
+.footer>p:last-of-type {
     font-size: 0.8rem;
     margin-top: 15px;
     opacity: 0.8;
 }
+
+
+/* estilo para o parágrafo final dentro do rodapé */
